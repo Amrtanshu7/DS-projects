@@ -18,10 +18,6 @@ n *first = NULL, *last = NULL;
 int number = 0;
  
 
-
-/*
- *MEMORY ALLOCATED FOR NODE DYNAMICALLY
- */
 n* create_node(int info)
 {
     number++;
@@ -31,9 +27,7 @@ n* create_node(int info)
     new->prev = NULL;
     return new;
 }
-/*
- *ADDS NEW NODE
- */
+
 void add_node()
 {
  
@@ -63,9 +57,7 @@ void add_node()
         first->prev = last;
     }
 }
-/*
- *INSERTS ELEMENT AT FIRST
- */
+
 void insert_at_first()
 {
  
@@ -95,9 +87,7 @@ void insert_at_first()
         printf("\n the value is inserted at begining");
     }
 }
-/*
- *INSERTS ELEMNET AT END
- */
+
 void insert_at_end()
 {
  
@@ -126,9 +116,7 @@ void insert_at_end()
         last->next = first;
     }
 }
-/*
- *INSERTS THE ELEMENT AT GIVEN POSITION
- */
+
 void insert_at_position()
 {
     int info, pos, len = 0, i;
@@ -178,9 +166,7 @@ void insert_at_position()
         }
     }
 }
-/*
- *SORTING IS DONE OF ONLY NUMBERS NOT LINKS
- */
+
 void sort_list()
 {
     n *temp;
@@ -207,9 +193,8 @@ void sort_list()
             printf("\n%d", ptr->val);
     }
 }
-/*
- *DELETION IS DONE
- */
+
+
 void delete_node_position()
 {
     int pos, count = 0, i;
@@ -260,9 +245,6 @@ void delete_node_position()
     }
 }
 
-/*
- *SEARCHING USING SINGLE KEY
- */
 void search()
 {
     int count = 0, key, i, f = 0;
@@ -289,9 +271,7 @@ void search()
             printf("\n the value is not found in linkedlist");
     }
 }
-/*
- *DISPLAYING IN BEGINNING
- */
+
 void display_from_beg()
 {
     int i;
@@ -304,9 +284,7 @@ void display_from_beg()
             printf("\n %d", ptr->val);
     }
 }
-/*
- * DISPLAYING IN REVERSE
- */
+
 
 int main()
 {
